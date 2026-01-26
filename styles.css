@@ -1,0 +1,250 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: Skranji;
+    src: url("/fonts/Skranji/Skranji-Regular.ttf");
+}
+@font-face {
+    font-family: Germania;
+    src: url("/fonts/Germania/GermaniaOne-Regular.ttf");
+}
+@font-face {
+    font-family: Monsterrat;
+    src: url("/fonts/Monsterrat/Montserrat-VariableFont_wght.ttf");
+}
+:root {
+    --title-font: Germania;
+    --body-font: Monsterrat;
+}
+html {
+    scroll-behavior: smooth;
+}
+/*Navigation bar stylings*/
+body {
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+}
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40%;
+    height: 75px;
+    position: fixed;
+    
+    border-radius: 15px;
+
+    backdrop-filter: blur(10px);
+
+}
+#navbarList {
+    display: flex;
+    gap: 15px;
+
+    font-family: var(--title-font);
+    letter-spacing: 7px;
+    font-size: 2rem;
+    color: white;
+
+    list-style-type: none;
+}
+.navbarLinks:link,.navbarLinks:visited {
+    text-decoration: none;
+    color: white;
+}
+.navbarLinks:hover {
+    color:lightskyblue;
+}
+
+/*Homepage Stylings*/
+#titlePage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-image: url("img/dark_mountain.avif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: fill;
+}
+#title {
+    text-align: center;
+
+    font-family: var(--title-font);
+    color: white;
+
+    letter-spacing: 8px;
+    font-size: 120px;
+    
+}
+#downArrow {
+    height: 100px;
+    
+    filter: invert(100%);
+}
+#downArrow:hover {
+    filter: brightness(0) saturate(100%);
+    filter: invert(64%) sepia(74%) saturate(228%) hue-rotate(162deg) brightness(104%) contrast(96%);
+}
+
+/*Homepage > Company Profile stylings*/
+#companyProfile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10%;
+
+    height: 100vh;
+    width: 100vw;
+
+    background: #86aec4;
+    background: linear-gradient(266deg,rgba(134, 174, 196, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+#descriptionBox {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    
+    height: 80%;
+    width: 25%;
+
+    border-radius: 15px;
+}
+#descriptionTitle {
+    font-size: 100px;
+    font-family: var(--title-font);
+    color: white;
+}
+#descriptionPara {
+    font-size: 30px;
+    color: white;
+
+    font-family: var(--body-font);
+    text-align: center;
+}
+#image {
+    height: 80%;
+    width: 35%;
+
+    border-radius: 12px;
+
+    background-image: url("/img/mountain-portrait.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/*Staff page stylings*/
+#staff {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-image: url("/img/cloud-mountains.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#staffTitle {
+    font-size: 100px;
+    font-family: var(--title-font);
+    color: white;
+}
+#staffContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 75vh;
+}
+.subStaffContainer {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+
+    height: 100%;
+    width: 25%;
+}
+.staffCircleTitle {
+    font-size: 50px;
+    font-family: var(--title-font);
+    color: white;
+}
+.staffCircle {
+    height: 325px;
+    width: 325px;
+
+    border-radius: 165px;
+    background-color: darkslategray;
+}
+.staffDesc {
+    font-size: 25px;
+    color: white;
+
+    font-family: var(--body-font);
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Placeholder stuff*/
+
+#courses {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-color: grey; 
+}
+#careers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-color: grey; 
+}
+#placeholderText {
+    font-family: Skranji;
+    font-size: 150px;
+    text-align: center;
+    color: black;
+}
+
+
