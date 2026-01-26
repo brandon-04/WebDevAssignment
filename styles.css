@@ -97,6 +97,21 @@ body {
     filter: invert(64%) sepia(74%) saturate(228%) hue-rotate(162deg) brightness(104%) contrast(96%);
 }
 
+/*Media stylings for mobile, homepage and navbar only*/
+@media screen and (max-width: 950px){
+    #navbar {
+        width: 100%;
+        height: 45px;
+    }
+    #navbarList {
+        letter-spacing: 3px;
+        font-size: 0.75rem;
+    }
+    #title {
+        font-size: 75px;
+    }
+}
+
 /*Homepage > Company Profile stylings*/
 #companyProfile {
     display: flex;
@@ -147,6 +162,29 @@ body {
     background-size: cover;
 }
 
+/*Media stylings for mobile, about us page only*/
+@media screen and (max-width: 950px) {
+    #companyProfile {
+        background-image: url("/img/mountain-portrait-darker.webp");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    #image {
+        display: none;
+    }
+    #descriptionBox {
+        width: 80%;
+    }
+    #descriptionTitle {
+        font-size: 80px;
+    }
+    #descriptionPara {
+        font-size: 25px;
+    }
+
+}
+
 /*Staff page stylings*/
 #staff {
     display: flex;
@@ -171,8 +209,9 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+
     width: 100%;
-    height: 75vh;
+    height: 65vh;
 }
 .subStaffContainer {
     display: flex;
@@ -181,10 +220,10 @@ body {
     justify-content: center;
     align-items: center;
 
-    gap: 20px;
+    gap: 35px;
 
     height: 100%;
-    width: 25%;
+    width: 22%;
 }
 .staffCircleTitle {
     font-size: 50px;
@@ -196,15 +235,96 @@ body {
     width: 325px;
 
     border-radius: 165px;
-    background-color: darkslategray;
 }
-.staffDesc {
+.staffPosi {
     font-size: 25px;
     color: white;
 
     font-family: var(--body-font);
     text-align: center;
 }
+.staffDesc {
+    font-size: 20px;
+    color: white;
+
+    font-family: var(--body-font);
+    text-align: center;
+}
+.staffIconContainer {
+    display: flex;
+    justify-content: space-around;
+
+    height: 50px;
+    width: 50%;
+}
+/*media stylings for staff page*/
+@media screen and (max-width: 950px) {
+    #staff {
+        height: 335vh;
+
+        align-items: center;
+        justify-content: flex-start;
+        gap: 30px;
+
+        background-image: none;
+        background-color: #86aec4;
+    }
+    #staffTitle {
+        margin-top: 50px;
+        font-size: 40px;
+    }
+    #staffContainer {
+        flex-direction: column;
+    }
+    .subStaffContainer {
+        height: auto;
+        width: 100%;
+        margin-top: 35px;
+        margin-bottom: 30px;
+    }
+    /* .staffIconContainer {
+
+    } */
+    .staffCircle {
+        height: 280px;
+        width: 280px;
+
+        border-radius: 140px;
+    }
+}
+#helenY {
+    background-image: url("/img/staff/helenY.avif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#jackYaeger {
+    background-image: url("/img/staff/jackYaeger.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#julianBartz {
+    background-image: url("/img/staff/julianBa.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+#amyWilliams {
+    background-image: url("/img/staff/amyW.avif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.staffIcons {
+    filter: invert(100%);
+}
+.staffIcons:hover {
+    filter: brightness(0) saturate(100%);
+    filter: invert(64%) sepia(74%) saturate(228%) hue-rotate(162deg) brightness(104%) contrast(96%);
+}
+
 
 
 
