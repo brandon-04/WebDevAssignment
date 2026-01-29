@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Courses</title>
+    <title>Careers</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/img/icons/code-block-tags.svg" type="image/x-icon">
 </head>
 <body>
 
@@ -14,15 +15,46 @@
             <li>|</li>
             <li><a class="navbarLinks" href="staff.html">STAFF</a></li>
             <li>|</li>
-            <li><a class="navbarLinks" href="careers.html">CAREERS</a></li>
+            <li><a class="navbarLinks" href="#careers">CAREERS</a></li>
             <li>|</li>
             <li><a class="navbarLinks" href="courses.html">COURSES</a></li>
         </ul>
 
     </div>
-        <section id="careers">
-        <h1 id="placeholderText">CAREERS</h1>
+
+    <section id="careers">
+        <h1 id="careersQuestion">TAKE YOUR CAREER TO NEW HEIGHTS</h1>
+
+        <div id="descBox">
+            <p id="careersDesc">All applicants must hold at least a Level 3 
+                Qualification (or equivalent) in a relevant field. <br>
+                Industry Experience is preferred but not required.
+            </p>
+        </div>
+
+        <div id="applyNowBox">
+            <h1 id="applyButton"><a class="navbarLinks" href="#application">APPLY NOW</a></h1>
+            <a href="#application"><img id="downArrow"src="/img/icons/arrow-down-bold(1).svg"></a>
+        </div>
     </section>
 
+    <section id="application">
+        <div id="formContainer">
+            <h1 id="applicationTitle">APPLICATION FORM</h1>
+            <p id="applicationDisc">We aim to get back to our applicants within 5-7 days, Good luck!</p>
+            <form id="applicationForm">
+                <input class="formObject" type="name" placeholder="Your name...">
+                <input class="formObject" type="email" placeholder="Your email...">
+                <textarea class="textAreaCV" id="quesForm" placeholder="Why you want to work for us..."></textarea>
+                <textarea class="textAreaCV" id="quesForm" placeholder="Describe the most complex web-project you've worked on..."></textarea>    
+
+                <label for="cvForm" id="labelCV">Upload your CV</label>
+                <input type="file" id="cvForm">
+
+                <button type="reset" id="submitButton">Submit</button>
+
+            </form>
+        </div>
+    </section>
 </body>
 </html>

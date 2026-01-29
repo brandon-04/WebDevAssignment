@@ -2,7 +2,6 @@
     margin: 0px;
     padding: 0px;
 }
-
 @font-face {
     font-family: Skranji;
     src: url("/fonts/Skranji/Skranji-Regular.ttf");
@@ -18,10 +17,14 @@
 :root {
     --title-font: Germania;
     --body-font: Monsterrat;
+    --silly-font: Skranji;
+
+    --hover-color: lightskyblue;
 }
 html {
     scroll-behavior: smooth;
 }
+
 /*Navigation bar stylings*/
 body {
     display: flex;
@@ -59,7 +62,7 @@ body {
     color: white;
 }
 .navbarLinks:hover {
-    color:lightskyblue;
+    color:var(--hover-color);
 }
 
 /*Homepage Stylings*/
@@ -72,7 +75,7 @@ body {
     height: 100vh;
     width: 100vw;
 
-    background-image: url("img/dark_mountain.avif");
+    background-image: url("img/bg/dark_mountain.avif");
     background-repeat: no-repeat;
     background-position: center;
     background-size: fill;
@@ -102,6 +105,8 @@ body {
     #navbar {
         width: 100%;
         height: 45px;
+
+        border-radius: 0px;
     }
     #navbarList {
         letter-spacing: 3px;
@@ -123,8 +128,8 @@ body {
     height: 100vh;
     width: 100vw;
 
-    background: #86aec4;
-    background: linear-gradient(266deg,rgba(134, 174, 196, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background: #9f94a4;
+    
 }
 #descriptionBox {
     display: flex;
@@ -134,7 +139,7 @@ body {
     align-items: center;
     
     height: 80%;
-    width: 25%;
+    width: 40%;
 
     border-radius: 15px;
 }
@@ -151,12 +156,16 @@ body {
     text-align: center;
 }
 #image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     height: 80%;
-    width: 35%;
+    width: 80%;
 
     border-radius: 12px;
 
-    background-image: url("/img/mountain-portrait.webp");
+    background-image: url("/img/bg/mountains-aerial.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -164,20 +173,16 @@ body {
 
 /*Media stylings for mobile, about us page only*/
 @media screen and (max-width: 950px) {
-    #companyProfile {
-        background-image: url("/img/mountain-portrait-darker.webp");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
     #image {
-        display: none;
+        width: 95%;
+        height: 98%;
     }
     #descriptionBox {
-        width: 80%;
+        width: 85%;
+        gap: 25px;
     }
     #descriptionTitle {
-        font-size: 80px;
+        font-size: 60px;
     }
     #descriptionPara {
         font-size: 25px;
@@ -195,7 +200,7 @@ body {
     height: 100vh;
     width: 100vw;
 
-    background-image: url("/img/cloud-mountains.jpeg");
+    background-image: url("/img/bg/cloud-mountains.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -257,41 +262,6 @@ body {
     height: 50px;
     width: 50%;
 }
-/*media stylings for staff page*/
-@media screen and (max-width: 950px) {
-    #staff {
-        height: 335vh;
-
-        align-items: center;
-        justify-content: flex-start;
-        gap: 30px;
-
-        background-image: none;
-        background-color: #86aec4;
-    }
-    #staffTitle {
-        margin-top: 50px;
-        font-size: 40px;
-    }
-    #staffContainer {
-        flex-direction: column;
-    }
-    .subStaffContainer {
-        height: auto;
-        width: 100%;
-        margin-top: 35px;
-        margin-bottom: 30px;
-    }
-    /* .staffIconContainer {
-
-    } */
-    .staffCircle {
-        height: 280px;
-        width: 280px;
-
-        border-radius: 140px;
-    }
-}
 #helenY {
     background-image: url("/img/staff/helenY.avif");
     background-repeat: no-repeat;
@@ -316,7 +286,6 @@ body {
     background-position: center;
     background-size: cover;
 }
-
 .staffIcons {
     filter: invert(100%);
 }
@@ -324,6 +293,249 @@ body {
     filter: brightness(0) saturate(100%);
     filter: invert(64%) sepia(74%) saturate(228%) hue-rotate(162deg) brightness(104%) contrast(96%);
 }
+
+/*media stylings for staff page*/
+@media screen and (max-width: 950px) {
+    #staff {
+        height: 335vh;
+
+        align-items: center;
+        justify-content: flex-start;
+        gap: 30px;
+
+        background-image: url("/img/bg/long-mobile-background.jpg");
+        background-color: #86aec4;
+    }
+    #staffTitle {
+        margin-top: 50px;
+        font-size: 40px;
+    }
+    #staffContainer {
+        flex-direction: column;
+    }
+    .subStaffContainer {
+        height: auto;
+        width: 100%;
+        margin-top: 35px;
+        margin-bottom: 30px;
+    }
+    .staffCircle {
+        height: 280px;
+        width: 280px;
+
+        border-radius: 140px;
+    }
+}
+
+/*Stylings for careers page*/
+#careers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap:30px;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-image: url("/img/bg/mountain-man-darker.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#careersQuestion {
+    font-size: 100px;
+    font-family: var(--title-font);
+
+    text-align: center;
+    color: white;
+}
+#descBox {
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+
+    flex-direction: column;
+}
+#careersDesc {
+    font-size: 20px;
+    color: white;
+
+    font-family: var(--body-font);
+    text-align: center;
+}
+#applyNowBox {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+#applyButton {
+    font-size: 75px;
+    font-family: var(--title-font);
+    color: white; 
+}
+#applyButton:hover {
+    color: var(--hover-color);
+}
+/*media stylings for careers homepage*/
+@media screen and (max-width: 950px) {
+    #careersQuestion {
+        font-size: 60px;
+    }
+}
+
+/*Careers > application form styling*/
+#application {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-image: url("/img/bg/mountain-roads-darker.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#formContainer {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+    height: 80%;
+    width: 60%;
+
+}
+#applicationForm {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap:25px;
+
+    height: 100%;
+    width: 100%;
+    
+    font-family: var(--body-font);
+}
+#applicationTitle {
+    font-size: 100px;
+    font-family: var(--title-font);
+    color: white;
+}
+#applicationDisc {
+    font-size: 20px;
+    color: white;
+
+    font-family: var(--body-font);
+    text-align: center;
+}
+.formObject {
+    height: 7%;
+    width: 30%;
+
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-family: var(--body-font);
+
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+
+    border-radius: 12px;
+    border-style: none;
+    border: thin white solid;
+}
+.textAreaCV {
+    height: 20%;
+    width: 35%;
+    resize: none;
+
+    background-color: transparent;
+    backdrop-filter: blur(8px);
+
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: var(--body-font);
+
+    border-radius: 12px;
+    border-style: none;
+    border: thin white solid;
+}
+#labelCV {
+    color: white;
+    font-size: 30px;
+    font-family: var(--body-font);
+}
+#cvForm {
+    text-align: center;
+    color: white;
+}
+#submitButton {
+    height: 7%;
+    width: 20%;
+
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-family: var(--body-font);
+
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+
+    border-radius: 12px;
+    border-style: none;
+    border: thin white solid;
+}
+#submitButton:hover {
+    background-color: var(--hover-color);
+}
+/*Application form media stylings*/
+@media screen and (max-width: 950px){
+    #formContainer {
+        height: 95%;
+        width: 100%;
+    }
+    #applicationForm {
+        gap: 10px;
+    }
+    #applicationTitle {
+        font-size: 60px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .formObject {
+        width: 95%;
+        font-size: 20px;
+    }
+    .textAreaCV {
+        width: 95%;
+        font-size: 20px;
+    }
+    #submitButton {
+        height: 10%;
+        width: 40%;
+    }
+}
+
+
+
+
+
+
+
 
 
 
@@ -350,18 +562,9 @@ body {
 
     background-color: grey; 
 }
-#careers {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    height: 100vh;
-    width: 100vw;
-
-    background-color: grey; 
-}
 #placeholderText {
-    font-family: Skranji;
+    font-family: var(--silly-font);
     font-size: 150px;
     text-align: center;
     color: black;
