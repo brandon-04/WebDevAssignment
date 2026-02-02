@@ -75,10 +75,10 @@ body {
     height: 100vh;
     width: 100vw;
 
-    background-image: url("img/bg/dark_mountain.avif");
+    background-image: url("img/bg/dark_mountain_top3.avif");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: fill;
+    background-position: top;
+    background-size: cover;
 }
 #title {
     text-align: center;
@@ -128,7 +128,7 @@ body {
     height: 100vh;
     width: 100vw;
 
-    background: #9f94a4;
+    background: #3a4959;
     
 }
 #descriptionBox {
@@ -165,10 +165,10 @@ body {
 
     border-radius: 12px;
 
-    background-image: url("/img/bg/mountains-aerial.jpg");
+    background-image: url("/img/bg/dark_mountain_bottom3.avif");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-position: bottom;
+    background-size: 150%;
 }
 
 /*Media stylings for mobile, about us page only*/
@@ -232,8 +232,8 @@ body {
     width: 22%;
 }
 .staffCircleTitle {
-    font-size: 50px;
-    font-family: var(--title-font);
+    font-size: 35px;
+    font-family: var(--body-font);
     color: white;
 }
 .staffCircle {
@@ -263,29 +263,22 @@ body {
     height: 50px;
     width: 50%;
 }
-#helenY {
-    background-image: url("/img/staff/helenY.avif");
+#helenY, #jackYaeger, #julianBartz, #amyWilliams {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+#helenY {
+    background-image: url("/img/staff/helenY.avif");
 }
 #jackYaeger {
     background-image: url("/img/staff/jackYaeger.webp");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 #julianBartz {
     background-image: url("/img/staff/julianBa.jpg");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
 }
 #amyWilliams {
     background-image: url("/img/staff/amyW.avif");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 .staffIcons {
     filter: invert(100%);
@@ -543,7 +536,10 @@ body {
     width: 100vw;
     gap: 10px;
 
-    background-color: grey;
+    background-image: url("/img/bg/red-dead-trees.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 #coursesTitle {
     font-size: 100px;
@@ -565,7 +561,7 @@ body {
 .courseBox {
     display: flex;
 
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
     flex-direction: column;
@@ -574,22 +570,30 @@ body {
     width: 30%;
 
     border: thin white solid;
+    backdrop-filter: blur(8px);
     border-radius: 12px;
 }
-.courseBoxLink {
+.courseBox:hover {
+    background-color: var(--hover-color);
+    filter: drop-shadow(0 0 0.2rem var(--hover-color));
+}
+.courseTitles {
     font-size: 50px;
     font-family: var(--title-font);
-    text-decoration: none;
-
-    text-align: center;
     color: white;
 }
-.courseBoxLink:hover {
-    color: var(--hover-color);
-}
-
 .courseLogos {
     max-height: 200px;
+}
+.textBox {
+    height: 40%;
+    width: 90%;
+}
+.courseDescriptor {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    font-family: var(--body-font);
 }
 
 
