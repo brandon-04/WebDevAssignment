@@ -2,18 +2,22 @@
     margin: 0px;
     padding: 0px;
 }
+
 @font-face {
     font-family: Skranji;
-    src: url("/fonts/Skranji/Skranji-Regular.ttf");
+    src: url("fonts/Skranji/Skranji-Regular.ttf");
 }
+
 @font-face {
     font-family: Germania;
-    src: url("/fonts/Germania/GermaniaOne-Regular.ttf");
+    src: url("fonts/Germania/GermaniaOne-Regular.ttf");
 }
+
 @font-face {
     font-family: Monsterrat;
-    src: url("/fonts/Monsterrat/Montserrat-VariableFont_wght.ttf");
+    src: url("fonts/Monsterrat/Montserrat-VariableFont_wght.ttf");
 }
+
 :root {
     --title-font: Germania;
     --body-font: Monsterrat;
@@ -21,6 +25,7 @@
 
     --hover-color: lightskyblue;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -32,6 +37,7 @@ body {
     align-items: center;
     flex-direction: column;
 }
+
 #navbar {
     display: flex;
     justify-content: center;
@@ -46,6 +52,7 @@ body {
     backdrop-filter: blur(10px);
 
 }
+
 #navbarList {
     display: flex;
     gap: 15px;
@@ -57,10 +64,12 @@ body {
 
     list-style-type: none;
 }
+
 .navbarLinks:link,.navbarLinks:visited {
     text-decoration: none;
     color: white;
 }
+
 .navbarLinks:hover {
     color:var(--hover-color);
 }
@@ -80,6 +89,7 @@ body {
     background-position: top;
     background-size: cover;
 }
+
 #title {
     text-align: center;
 
@@ -90,11 +100,13 @@ body {
     font-size: 120px;
     
 }
+
 #downArrow {
     height: 100px;
     
     filter: invert(100%);
 }
+
 #downArrow:hover {
     filter: brightness(0) saturate(100%);
     filter: invert(64%) sepia(74%) saturate(228%) hue-rotate(162deg) brightness(104%) contrast(96%);
@@ -108,10 +120,12 @@ body {
 
         border-radius: 0px;
     }
+
     #navbarList {
         letter-spacing: 3px;
         font-size: 0.75rem;
     }
+
     #title {
         font-size: 75px;
     }
@@ -131,6 +145,7 @@ body {
     background: #3a4959;
     
 }
+
 #descriptionBox {
     display: flex;
     flex-direction: column;
@@ -143,11 +158,13 @@ body {
 
     border-radius: 15px;
 }
+
 #descriptionTitle {
     font-size: 100px;
     font-family: var(--title-font);
     color: white;
 }
+
 #descriptionPara {
     font-size: 30px;
     color: white;
@@ -155,6 +172,7 @@ body {
     font-family: var(--body-font);
     text-align: center;
 }
+
 #image {
     display: flex;
     justify-content: center;
@@ -165,7 +183,7 @@ body {
 
     border-radius: 12px;
 
-    background-image: url("/img/bg/dark_mountain_bottom3.avif");
+    background-image: url("img/bg/dark_mountain_bottom3.avif");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 150%;
@@ -177,13 +195,16 @@ body {
         width: 95%;
         height: 98%;
     }
+
     #descriptionBox {
         width: 85%;
         gap: 25px;
     }
+
     #descriptionTitle {
         font-size: 60px;
     }
+
     #descriptionPara {
         font-size: 25px;
     }
@@ -200,17 +221,19 @@ body {
     height: 100vh;
     width: 100vw;
 
-    background-image: url("/img/bg/cloud-mountains.jpeg");
+    background-image: url("img/bg/dark-ocean.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+
 #staffTitle {
     font-size: 90px;
     font-family: var(--title-font);
     color: white;
     padding-bottom: 25px;
 }
+
 #staffContainer {
     display: flex;
     justify-content: space-around;
@@ -219,6 +242,7 @@ body {
     width: 100%;
     height: 70%;
 }
+
 .subStaffContainer {
     display: flex;
     flex-direction: column;
@@ -231,17 +255,20 @@ body {
     height: 100%;
     width: 22%;
 }
+
 .staffCircleTitle {
     font-size: 35px;
     font-family: var(--body-font);
     color: white;
 }
+
 .staffCircle {
     min-height: 325px;
     min-width: 325px;
 
     border-radius: 165px;
 }
+
 .staffPosi {
     font-size: 25px;
     color: white;
@@ -249,6 +276,7 @@ body {
     font-family: var(--body-font);
     text-align: center;
 }
+
 .staffDesc {
     font-size: 20px;
     color: white;
@@ -256,6 +284,7 @@ body {
     font-family: var(--body-font);
     text-align: center;
 }
+
 .staffIconContainer {
     display: flex;
     justify-content: space-around;
@@ -263,26 +292,33 @@ body {
     height: 50px;
     width: 50%;
 }
+
 #helenY, #jackYaeger, #julianBartz, #amyWilliams {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+
 #helenY {
-    background-image: url("/img/staff/helenY.avif");
+    background-image: url("img/staff/helenY.avif");
 }
+
 #jackYaeger {
-    background-image: url("/img/staff/jackYaeger.webp");
+    background-image: url("img/staff/jackYaeger.webp");
 }
+
 #julianBartz {
-    background-image: url("/img/staff/julianBa.jpg");
+    background-image: url("img/staff/julianBa.jpg");
 }
+
 #amyWilliams {
-    background-image: url("/img/staff/amyW.avif");
+    background-image: url("img/staff/amyW.avif");
 }
+
 .staffIcons {
     filter: invert(100%);
 }
+
 .staffIcons:hover {
     filter: brightness(0) saturate(100%);
     filter: invert(64%) sepia(74%) saturate(228%) hue-rotate(162deg) brightness(104%) contrast(96%);
@@ -297,22 +333,26 @@ body {
         justify-content: flex-start;
         gap: 30px;
 
-        background-image: url("/img/bg/long-mobile-background.jpg");
+        background-image: url("img/bg/long-mobile-background.jpg");
         background-color: #86aec4;
     }
+
     #staffTitle {
         margin-top: 50px;
         font-size: 40px;
     }
+
     #staffContainer {
         flex-direction: column;
     }
+
     .subStaffContainer {
         height: auto;
         width: 100%;
         margin-top: 35px;
         margin-bottom: 30px;
     }
+
     .staffCircle {
         height: 280px;
         width: 280px;
@@ -333,11 +373,12 @@ body {
     height: 100vh;
     width: 100vw;
 
-    background-image: url("/img/bg/mountain-man-darker.webp");
+    background-image: url("img/bg/purple-sky-mountain-darker.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+
 #careersQuestion {
     font-size: 100px;
     font-family: var(--title-font);
@@ -345,6 +386,7 @@ body {
     text-align: center;
     color: white;
 }
+
 #descBox {
     display: flex;
 
@@ -353,6 +395,7 @@ body {
 
     flex-direction: column;
 }
+
 #careersDesc {
     font-size: 20px;
     color: white;
@@ -360,6 +403,7 @@ body {
     font-family: var(--body-font);
     text-align: center;
 }
+
 #applyNowBox {
     display: flex;
 
@@ -368,11 +412,13 @@ body {
 
     flex-direction: column;
 }
+
 #applyButton {
     font-size: 75px;
     font-family: var(--title-font);
     color: white; 
 }
+
 #applyButton:hover {
     color: var(--hover-color);
 }
@@ -393,11 +439,12 @@ body {
     height: 100vh;
     width: 100vw;
 
-    background-image: url("/img/bg/mountain-roads-darker.jpg");
+    background-image: url("img/bg/dark-mountain-grass-valley-darker.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+
 #formContainer {
     display: flex;
 
@@ -409,6 +456,7 @@ body {
     width: 60%;
 
 }
+
 #applicationForm {
     display: flex;
     flex-direction: column;
@@ -428,6 +476,7 @@ body {
     font-family: var(--title-font);
     color: white;
 }
+
 #applicationDisc {
     font-size: 20px;
     color: white;
@@ -435,6 +484,7 @@ body {
     font-family: var(--body-font);
     text-align: center;
 }
+
 .formObject {
     height: 7%;
     width: 50%;
@@ -451,6 +501,7 @@ body {
     border-style: none;
     border: thin white solid;
 }
+
 .textAreaCV {
     height: 20%;
     width: 50%;
@@ -468,15 +519,18 @@ body {
     border-style: none;
     border: thin white solid;
 }
+
 #labelCV {
     color: white;
     font-size: 30px;
     font-family: var(--body-font);
 }
+
 #cvForm {
     text-align: center;
     color: white;
 }
+
 #submitButton {
     height: 7%;
     width: 20%;
@@ -493,6 +547,7 @@ body {
     border-style: none;
     border: thin white solid;
 }
+
 #submitButton:hover {
     background-color: var(--hover-color);
 }
@@ -502,22 +557,27 @@ body {
         height: 95%;
         width: 100%;
     }
+
     #applicationForm {
         gap: 10px;
     }
+
     #applicationTitle {
         font-size: 60px;
         text-align: center;
         margin-top: 30px;
     }
+
     .formObject {
         width: 95%;
         font-size: 20px;
     }
+
     .textAreaCV {
         width: 95%;
         font-size: 20px;
     }
+
     #submitButton {
         height: 10%;
         width: 40%;
@@ -529,24 +589,26 @@ body {
     display: flex;
     flex-direction: column;
 
-   justify-content: center;
+    justify-content: center;
     align-items: center;
 
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     gap: 10px;
 
-    background-image: url("/img/bg/red-dead-trees.webp");
+    background-image: url("img/bg/red-dead-trees.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
 #coursesTitle {
     font-size: 100px;
     font-family: var(--title-font);
     color: white;
     text-align: center;
 }
+
 #coursesContainer {
     display: flex;
 
@@ -555,9 +617,9 @@ body {
 
     align-items: center;
 
-    width: 100%;
-    height: 65%;
+    height: 500px;
 }
+
 .courseBox {
     display: flex;
 
@@ -567,33 +629,71 @@ body {
     flex-direction: column;
 
     height: 100%;
-    width: 30%;
+    width: 100%;
 
     border: thin white solid;
     backdrop-filter: blur(8px);
     border-radius: 12px;
 }
+
 .courseBox:hover {
     background-color: var(--hover-color);
     filter: drop-shadow(0 0 0.2rem var(--hover-color));
 }
+
 .courseTitles {
     font-size: 50px;
     font-family: var(--title-font);
     color: white;
 }
+
 .courseLogos {
     max-height: 200px;
 }
+
 .textBox {
     height: 40%;
     width: 90%;
 }
+
 .courseDescriptor {
     text-align: center;
     font-size: 25px;
     color: white;
     font-family: var(--body-font);
+}
+
+.courseLink {
+    height: 100%;
+    width: 30%;
+
+}
+
+.courseLink:link, .courseLink:visited, .courseLink:hover, .courseLink:active {
+    text-decoration: none;
+}
+
+/*Courses Media Stylings*/
+@media screen and (max-width: 950px){
+    #coursesContainer {
+        flex-direction: column;
+    }
+    .courseLink {
+        width: 80%;
+    }
+    .courseBox {
+        text-align: center;
+        
+    }
+    .courseDescriptor {
+        font-size: 11px;
+    }
+    .courseTitles {
+        font-size: 25px;
+    }
+    .courseLogos {
+        max-width: 100px;
+    }
 }
 
 
