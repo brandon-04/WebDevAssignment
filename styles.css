@@ -82,7 +82,7 @@ body {
     align-items: center;
 
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 
     background-image: url("img/bg/dark_mountain_top3.avif");
     background-repeat: no-repeat;
@@ -140,7 +140,7 @@ body {
     gap: 10%;
 
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 
     background: #3a4959;
     
@@ -219,7 +219,7 @@ body {
     align-items: center;
 
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 
     background-image: url("img/bg/dark-ocean.jpg");
     background-repeat: no-repeat;
@@ -371,7 +371,7 @@ body {
     gap:30px;
 
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 
     background-image: url("img/bg/mountain-man-darker.webp");
     background-repeat: no-repeat;
@@ -437,7 +437,7 @@ body {
     align-items: center;
 
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 
     background-image: url("img/bg/dark-mountain-grass-valley-darker.jpg");
     background-repeat: no-repeat;
@@ -593,7 +593,7 @@ body {
     align-items: center;
 
     min-height: 100vh;
-    width: 100vw;
+    width: 100%;
     gap: 10px;
 
     background-image: url("img/bg/red-dead-trees.webp");
